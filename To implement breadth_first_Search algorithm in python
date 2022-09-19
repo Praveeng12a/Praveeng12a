@@ -1,0 +1,37 @@
+# Defining the Tree/graph
+graph={
+'A':['B'],
+'A':['C'],
+'B':['D'],
+'B':['E'],
+'C':['C'],
+'C':['D'],
+'C':['F'],
+'D':['C'],
+'D':['E'],
+'E':['G'],
+'F':['G'],
+'G':[]
+}
+
+
+
+visited=[]
+queue=[]
+
+
+# main function
+def bfs(visited, graph, node, G_node):
+  visited.append(node)
+  queue.append(node)
+  while queue: # Creating loop to visit each node
+    m = queue.pop(0)
+    print(m, end = ' ')
+    for neighbour in graph[m]:
+      if neighbour not in visited:
+        if G_node not in visited:
+          visited.append(neighbour)
+          queue.append(neighbour)
+# Driver Code
+print("Following is the Breadth-First search")
+bfs(visited, graph, 'A', 'D')
