@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Praveeng12a
 - 👀 I’m interested in Data Science
-- 🌱 I’m currently learning the mqachine learnig, Data Science
+- 🌱 I’m currently learning the machine learnig, Data Science
  
 
 <!---
